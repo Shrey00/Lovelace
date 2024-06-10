@@ -1,33 +1,48 @@
+@import '@radix-ui/colors/gray.css';
+@import '@radix-ui/colors/gray-dark.css';
+@import '@radix-ui/colors/indigo.css';
+@import '@radix-ui/colors/indigo-dark.css';
+@import '@radix-ui/colors/green.css';
+@import '@radix-ui/colors/indigo-dark.css';
+@import '@radix-ui/colors/red.css';
+@import '@radix-ui/colors/red-dark.css';
+body {
+    /* backgrounds */
+    --bg-indigo-1: var(--indigo-1);
+    --bg-indigo-2: var(--indigo-2);
+    --bg-gray-1: var(--gray-1); 
+    --bg-gray-2: var(--gray-2);
+    /* Interactive Components */
+    --ic-indigo-1: var(--indigo-3);
+    --ic-indigo-2: var(--indigo-4);
+    --ic-indigo-3: var(--indigo-5);
+
+    /* borders and separators */
+    --border-indigo-1: var(--indigo-6);
+    --border-indigo-2: var(--indigo-7);
+    --border-indigo-3: var(--indigo-8);
+
+    /* solid colors */
+    --solid-indigo-1: var(--indigo-9);
+    --solid-indigo-2: var(--indigo-10);
+
+    /* accessible text */
+    --text-indigo-1: var(--indigo-11);
+    --text-indigo-2: var(--indigo-12);
+
+    /* success */
+    --success-1: var(--green-1);
+    --success-2: var(--green-2);
+
+    /* warning */
+    --warning-1: var(--yellow-1);
+    --warning-2: var(--yellow-2);
+  
+    /* danger */
+    --danger-1: var(--red-1);
+    --danger-2: var(--red-2);
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
